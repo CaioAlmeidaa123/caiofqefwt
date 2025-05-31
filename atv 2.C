@@ -71,22 +71,8 @@ void ordenarPorTitulo(Livro vetor[], int n) {
     }
 }
 
-// Busca binária por título
-int buscaBinariaPorTitulo(Livro vetor[], int n, char titulo[]) {
-    int inicio = 0, fim = n - 1;
-    while (inicio <= fim) {
-        int meio = (inicio + fim) / 2;
-        int cmp = strcmp(vetor[meio].titulo, titulo);
-        if (cmp == 0) {
-            return meio;
-        } else if (cmp < 0) {
-            inicio = meio + 1;
-        } else {
-            fim = meio - 1;
-        }
-    }
-    return -1;
-}
+// Busca binária por título - Não consegui fazer - .
+
 
 // Função principal
 int main() {
